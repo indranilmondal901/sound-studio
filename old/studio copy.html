@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Studio | KRG Kreative Studio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* HERO */
+
+        .page-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url("https://images.unsplash.com/photo-1511735111819-9a3f7709049c") center/cover no-repeat;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .page-hero h1 {
+            font-size: 48px;
+        }
+
+        /* STUDIO GRID */
+
+        .studio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .studio-card {
+            background: white;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+            transition: .3s;
+        }
+
+        .studio-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, .12);
+        }
+
+        .studio-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .studio-card .content {
+            padding: 20px;
+        }
+
+        /* EQUIPMENT */
+
+        .equipment {
+            background: #f7f7f7;
+        }
+
+        .equipment-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .eq-box {
+            background: white;
+            padding: 25px;
+            border-radius: 6px;
+            text-align: center;
+            transition: .3s;
+        }
+
+        .eq-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+        }
+
+        /* CTA */
+
+        .cta {
+            background: #f05454;
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            margin-bottom: 20px;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:768px) {
+
+            .page-hero h1 {
+                font-size: 32px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="container">
+
+            <nav>
+
+                <div class="logo">KRG Kreative Studio</div>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="studio.html">Studio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="page-hero">
+
+        <div>
+            <h1>Our Studio</h1>
+            <p>Professional Recording Environment</p>
+        </div>
+
+    </section>
+
+
+
+    <!-- STUDIO ROOMS -->
+
+    <section class="fade">
+
+        <div class="container">
+
+            <h2 class="section-title">Studio Facilities</h2>
+
+            <div class="studio-grid">
+
+                <div class="studio-card">
+
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d">
+
+                    <div class="content">
+                        <h3>Recording Room</h3>
+                        <p>Soundproof recording room designed for high quality voice capture.</p>
+                    </div>
+
+                </div>
+
+                <div class="studio-card">
+
+                    <img src="https://images.unsplash.com/photo-1511735111819-9a3f7709049c">
+
+                    <div class="content">
+                        <h3>Mixing & Editing</h3>
+                        <p>Advanced digital workstations for audio mixing and post-production.</p>
+                    </div>
+
+                </div>
+
+                <div class="studio-card">
+
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e">
+
+                    <div class="content">
+                        <h3>Dubbing Booth</h3>
+                        <p>Professional dubbing booth for film and media production.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- EQUIPMENT -->
+
+    <section class="equipment fade">
+
+        <div class="container">
+
+            <h2 class="section-title">Studio Equipment</h2>
+
+            <div class="equipment-list">
+
+                <div class="eq-box">
+                    <h3>Condenser Microphones</h3>
+                    <p>Premium studio microphones for crystal clear recording.</p>
+                </div>
+
+                <div class="eq-box">
+                    <h3>Audio Interfaces</h3>
+                    <p>High-end interfaces for accurate sound capture.</p>
+                </div>
+
+                <div class="eq-box">
+                    <h3>Mixing Console</h3>
+                    <p>Professional mixers used for sound balancing.</p>
+                </div>
+
+                <div class="eq-box">
+                    <h3>Monitoring Speakers</h3>
+                    <p>Studio monitors for precise audio playback.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <div class="container">
+
+            <h2>Book Our Studio for Your Project</h2>
+
+            <a href="contact.html" class="btn">Get In Touch</a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container">
+
+            <p>© 2026 KRG Kreative Studio | All Rights Reserved</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
