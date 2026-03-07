@@ -16,3 +16,10 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 
 faders.forEach(el => observer.observe(el));
+
+const toggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+toggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
