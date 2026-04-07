@@ -55,6 +55,11 @@ body {
   line-height: 1.6;
 }
 
+a{
+  color: var(--text-primary);
+  text-decoration: underline;
+}
+
 /* ================================
    LAYOUT
 ================================ */
@@ -73,6 +78,13 @@ section {
   text-align: center;
   font-size: 36px;
   margin-bottom: 60px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
 }
 
 /* ================================
@@ -174,10 +186,47 @@ nav a:hover {
   justify-content: center;
   text-align: center;
   color: white;
+}
 
+.home {
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("https://images.unsplash.com/photo-1492724441997-5dc865305da7")
+    url("https://res.cloudinary.com/devya77n3/image/upload/v1775036106/imresizer-DSC00965_qvbeff.jpg")
+      center/cover no-repeat;
+}
+
+.about {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://res.cloudinary.com/devya77n3/image/upload/v1775041635/collage1_p71n1q.jpg")
+      center/cover no-repeat;
+}
+
+.service {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://res.cloudinary.com/devya77n3/image/upload/v1775590573/MixCollage-08-Apr-2026-01-00-AM-4837_uqttd7.jpg")
+      center/cover no-repeat;
+}
+
+.studio {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://res.cloudinary.com/devya77n3/image/upload/v1775596814/MixCollage-08-Apr-2026-02-50-AM-77_ussqrb.jpg")
+      center/cover no-repeat;
+}
+
+.studio-intro {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://res.cloudinary.com/devya77n3/image/upload/v1775597157/MixCollage-08-Apr-2026-02-55-AM-1129_nzo5u0.jpg")
+      center/cover no-repeat;
+}
+
+.contact {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://res.cloudinary.com/devya77n3/image/upload/v1775601467/MixCollage-08-Apr-2026-04-07-AM-8616_aninln.jpg")
       center/cover no-repeat;
 }
 

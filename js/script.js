@@ -21,5 +21,29 @@ const toggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
 toggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+    navLinks.classList.toggle("active");
 });
+
+
+function sendMail(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    const mailTo = "youremail@example.com"; // 🔥 change this
+
+    const body = `
+Name: ${name}
+Email: ${email}
+
+Message:
+${message}
+    `;
+
+    const mailLink = `mailto:${mailTo}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailLink;
+}

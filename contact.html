@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact | KRG Kreative Studio</title>
+    <title>Contact | EKK Production Group</title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -21,7 +21,7 @@
             <nav>
 
                 <div class="logo">
-                    KRG Kreative Studio
+                    <img src="images/logo-2.png" style="width:80px; vertical-align:middle; margin-right:8px;">
                 </div>
 
                 <div class="menu-toggle">
@@ -42,10 +42,9 @@
 
     </header>
 
-
     <!-- HERO -->
 
-    <section class="hero">
+    <section class="hero contact">
 
         <div class="container">
 
@@ -62,7 +61,7 @@
 
     <!-- CONTACT INFO -->
 
-    <section>
+    <section class="contact-info">
 
         <div class="container">
 
@@ -73,35 +72,34 @@
             <div class="grid">
 
                 <div class="card fade">
-
-                    <h3>Studio Address</h3>
-
+                    <h3>📍 Studio Address</h3>
                     <p>
-                        KRG Kreative Studio<br>
-                        Barddhaman, West Bengal<br>
+                        EKK Production Group<br>
+                        Bardhaman, West Bengal<br>
                         India
                     </p>
-
                 </div>
 
                 <div class="card fade">
-
-                    <h3>Phone</h3>
-
+                    <h3>📞 Phone</h3>
                     <p>
-                        +91 XXXXX XXXXX
+                        <a href="tel:+918335970689">+91 83359 70689</a>
                     </p>
-
                 </div>
 
                 <div class="card fade">
-
-                    <h3>Email</h3>
-
+                    <h3>✉️ Email</h3>
                     <p>
-                        info@krgkreativestudio.com
+                        <a href="mailto:info@krgkreativestudio.com">info@krgkreativestudio.com</a>
                     </p>
+                </div>
 
+                <div class="card fade">
+                    <h3>💼 LinkedIn</h3>
+                    <p>
+                        <a href="https://www.linkedin.com/in/ekk-production-group-181442389?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            target="_blank" rel="noopener noreferrer">Connect With Us</a>
+                    </p>
                 </div>
 
             </div>
@@ -121,19 +119,16 @@
                 Send Us a Message
             </h2>
 
-            <form class="contact-form">
+            <form onsubmit="sendMail(event)" class="contact-form">
 
                 <div class="grid">
-
-                    <input type="text" placeholder="Your Name" required>
-
-                    <input type="email" placeholder="Your Email" required>
-
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
                 </div>
 
-                <input type="text" placeholder="Subject" required>
+                <input type="text" id="subject" placeholder="Subject" required>
 
-                <textarea rows="6" placeholder="Your Message" required></textarea>
+                <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
 
                 <br><br>
 
@@ -177,7 +172,7 @@
         <div class="container">
 
             <p>
-                © 2026 KRG Kreative Studio | All Rights Reserved
+                © 2026 EKK Production Group | All Rights Reserved
             </p>
 
         </div>
