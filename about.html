@@ -9,6 +9,8 @@
     <title>About | EKK Production Group</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
@@ -49,9 +51,11 @@
 
         <div class="container">
 
-            <h1>About EKK Production Group</h1>
+            <h1 class="animate__animated animate__flipInX">
+                About EKK Production Group
+            </h1>
 
-            <p>
+            <p class="animate__animated animate__slideInLeft animate__delay-1s">
                 Elevating Audio Excellence Through Professional Production & Creative Innovation
             </p>
 
@@ -62,24 +66,26 @@
 
     <!-- ABOUT SECTION -->
 
-    <section>
+    <section data-aos="fade-up">
 
         <div class="container two-col">
 
-            <div class="fade">
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="3000">
 
-                <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d" alt="studio"
+                <img src="https://res.cloudinary.com/devya77n3/image/upload/v1775036106/imresizer-DSC00965_qvbeff.jpg" alt="Studio Image"
                     style="width:100%; border-radius:6px;">
 
             </div>
 
             <div class="fade">
 
-                <h2>Who We Are</h2>
+                <h2 data-aos="zoom-in">
+                    Who We Are
+                </h2>
 
                 <br>
 
-                <p>
+                <p data-aos="zoom-in">
                     EKK Production Group is a professional audio & visual post production services provider along with
                     proper studio set up and multiple in-house Artists , technicians. We are specializing in voice-over
                     recording, dubbing, sound design and post-production services.
@@ -87,7 +93,7 @@
 
                 <br>
 
-                <p>
+                <p data-aos="zoom-in">
                     We are combines experienced sound engineers with modern recording equipment to deliver high quality
                     audio production for films, advertisements and digital media.
                 </p>
@@ -101,17 +107,17 @@
 
     <!-- WHY CHOOSE US -->
 
-    <section class="dark-section">
+    <section class="whyChooseUsBg" data-aos="fade-up">
 
         <div class="container">
 
-            <h2 class="section-title">
+            <h2 class="section-title" data-aos="fade-right">
                 Why Choose Our Studio
             </h2>
 
             <div class="grid">
 
-                <div class="card fade">
+                <div class="card fade"data-aos="fade-up" data-aos-delay="100">
 
                     <h3>Professional Equipment</h3>
 
@@ -123,7 +129,7 @@
                 </div>
 
 
-                <div class="card fade">
+                <div class="card fade" data-aos="fade-up" data-aos-delay="200">
 
                     <h3>Experienced Team</h3>
 
@@ -135,7 +141,7 @@
                 </div>
 
 
-                <div class="card fade">
+                <div class="card fade" data-aos="fade-up" data-aos-delay="300">
 
                     <h3>High Quality Output</h3>
 
@@ -146,7 +152,7 @@
 
                 </div>
 
-                <div class="card fade">
+                <div class="card fade" data-aos="fade-up" data-aos-delay="400">
 
                     <h3>Dedicated Project Management</h3>
 
@@ -158,7 +164,7 @@
                 </div>
 
 
-                <div class="card fade">
+                <div class="card fade" data-aos="fade-up" data-aos-delay="500">
 
                     <h3>Fast Delivery</h3>
 
@@ -169,7 +175,7 @@
 
                 </div>
 
-                 <div class="card fade">
+                <div class="card fade" data-aos="fade-up" data-aos-delay="600">
 
                     <h3>Commitment To Long-term Partnerships</h3>
 
@@ -189,15 +195,15 @@
 
     <!-- CTA -->
 
-    <section>
+    <section class="contact" data-aos="fade-up">
 
         <div class="container">
 
-            <h2 class="section-title">
+            <h2 class="section-title" data-aos="fade-right">
                 Ready to Work With Us?
             </h2>
 
-            <p style="text-align:center; max-width:700px; margin:auto;">
+            <p style="text-align:center; max-width:700px; margin:auto;" data-aos="zoom-in">
                 Get in touch with our studio today and let’s bring your
                 audio project to life.
             </p>
@@ -206,7 +212,7 @@
 
             <div style="text-align:center">
 
-                <a href="contact.html" class="btn">
+                <a href="contact.html" class="btn" data-aos="fade-left">
                     Contact Our Studio
                 </a>
 
@@ -230,6 +236,7 @@
     </footer>
 
 
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="js/script.js"></script>
 
 </body>

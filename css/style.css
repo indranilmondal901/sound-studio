@@ -55,7 +55,7 @@ body {
   line-height: 1.6;
 }
 
-a{
+a {
   color: var(--text-primary);
   text-decoration: underline;
 }
@@ -230,6 +230,76 @@ nav a:hover {
       center/cover no-repeat;
 }
 
+.gallery {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://res.cloudinary.com/devya77n3/image/upload/v1775737399/pngtree-black-and-grey-wall-image-background-picture-image_1172485_gzo31i.png")
+      center/cover no-repeat;
+}
+
+.consoleBg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://res.cloudinary.com/devya77n3/image/upload/v1775737642/fader-digital-mixing-console-with-volume-meter_169016-5233_jmhzwo.avif")
+      center/cover no-repeat;
+}
+
+.equipmentBg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://res.cloudinary.com/devya77n3/image/upload/v1775737801/music-studio-equipment-stockcake_se9ukf.webp")
+      center/cover no-repeat;
+}
+
+.telephoneBg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://res.cloudinary.com/devya77n3/image/upload/v1775738314/34781_fqv4gt.jpg")
+      center/cover no-repeat;
+}
+
+.emailBg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://res.cloudinary.com/devya77n3/image/upload/v1775738486/images_zn7jc5.jpg")
+      center/cover no-repeat;
+}
+
+.mapSectionBg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://res.cloudinary.com/devya77n3/image/upload/v1775834284/map-time-zones-infographics-time-wallpaper-preview_bk7iam.jpg")
+      center/cover no-repeat;
+}
+
+.serviceSectionBg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://res.cloudinary.com/devya77n3/image/upload/v1775834928/music-vinyl-record-label-with-sound-notes_1017-33905_wcbivw.avif")
+      center/cover no-repeat;
+}
+
+.whyChooseUsBg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://res.cloudinary.com/devya77n3/image/upload/v1775835922/istockphoto-518281016-612x612_lk1dpr.jpg")
+      center/cover no-repeat;
+}
+
+.whatWeOfferBg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://res.cloudinary.com/devya77n3/image/upload/v1775841608/download_ig1tjd.jpg")
+      center/cover no-repeat;
+}
+
+.testimonialsBg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://res.cloudinary.com/devya77n3/image/upload/v1775843318/pngtree-template-for-3d-review-designs-image_3683798_kgm8db.jpg")
+      center/cover no-repeat;
+}
+
 .hero h1 {
   font-size: 60px;
   margin-bottom: 20px;
@@ -275,17 +345,48 @@ nav a:hover {
 }
 
 .imgcard {
-  /* background: var(--bg-card); */
   padding: 8px 8px 0 8px;
   border-radius: 10px;
-  /* border: 1px solid var(--border); */
-  transition: 0.6s;
+  overflow: hidden;
+  position: relative; /* 🔥 REQUIRED for overlay */
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
 }
 
+/* Image styling */
+.imgcard img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease; /* 🔥 smooth zoom */
+}
+
+/* Card hover (optional but recommended) */
 .imgcard:hover {
   transform: translateY(-8px);
-  /* box-shadow: var(--shadow); */
-  border: 1px solid var(--accent);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--text-primary);
+}
+
+/* Image zoom */
+.imgcard:hover img {
+  transform: scale(1.4);
+}
+
+/* Overlay */
+.imgcard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.4s;
+  pointer-events: none; /* 🔥 prevents blocking hover */
+}
+
+.imgcard:hover::after {
+  background: rgba(0, 0, 0, 0.1);
 }
 
 /* ================================
