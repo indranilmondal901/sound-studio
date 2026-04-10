@@ -512,3 +512,66 @@ footer {
     gap: 15px;
   }
 }
+
+
+
+
+
+/* Experience Box - Premium UI */
+
+.experience-box {
+    margin-top: 25px;
+    display: inline-block;
+    width: 100%;
+}
+
+.exp-inner {
+    background: linear-gradient(135deg, #1f1f1f, #111);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 25px 35px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+/* Glow effect */
+.exp-inner::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(240,84,84,0.2), transparent 70%);
+    top: -10%;
+    left: -10%;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.exp-inner:hover::before {
+    opacity: 1;
+}
+
+/* Hover lift */
+.exp-inner:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+/* Number styling */
+.exp-inner span {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--accent);
+    display: block;
+}
+
+/* Text styling */
+.exp-inner p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    letter-spacing: 1px;
+}

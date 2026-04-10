@@ -49,7 +49,33 @@ ${message}
 }
 
 AOS.init({
-  duration: 800,
-  easing: 'ease-in-out',
-  once: true
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true
 });
+
+
+const expBox = document.querySelector(".experience-box");
+let started = false;
+
+const obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && !started) {
+            started = true;
+
+            let count = 0;
+            let target = 20;
+
+            let interval = setInterval(() => {
+                if (count >= target) {
+                    clearInterval(interval);
+                } else {
+                    count++;
+                    document.getElementById("expCount").innerText = `${count} +`;
+                }
+            }, 200);
+        }
+    });
+}, { threshold: 0.5 });
+
+obs.observe(expBox);
