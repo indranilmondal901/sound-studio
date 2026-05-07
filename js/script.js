@@ -33,7 +33,7 @@ function sendMail(e) {
     const subject = document.getElementById("subject").value;
     const message = document.getElementById("message").value;
 
-    const mailTo = "youremail@example.com"; // 🔥 change this
+    const mailTo = "bussiness@ekkproductiongroup.com"; // 🔥 change this
 
     const body = `
 Name: ${name}
